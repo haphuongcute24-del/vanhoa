@@ -1,0 +1,246 @@
+/* ============================================
+   VÂN HOA — Animations
+   Keyframes, Transitions, Scroll Effects
+   ============================================ */
+
+/* ── Hero Gradient Shift ── */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Floating Elements ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-12px) rotate(1deg); }
+  75% { transform: translateY(8px) rotate(-1deg); }
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(10px) rotate(-1deg); }
+  75% { transform: translateY(-14px) rotate(1deg); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.02); }
+}
+
+/* ── Shimmer (for loading states) ── */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Shine Sweep (for buttons) ── */
+@keyframes shineSweep {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* ── Fade In Variants ── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ── Scale In ── */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ── Icon Bounce ── */
+@keyframes iconBounce {
+  0%, 100% { transform: scale(1); }
+  40% { transform: scale(1.15); }
+  60% { transform: scale(0.95); }
+  80% { transform: scale(1.05); }
+}
+
+/* ── Decorative Spin ── */
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ── Pulse Glow ── */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(242, 181, 200, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(242, 181, 200, 0);
+  }
+}
+
+/* ── Line Draw (for decorative lines) ── */
+@keyframes lineDraw {
+  from { width: 0; }
+  to { width: 60px; }
+}
+
+/* ── Text Reveal Classes (used by GSAP) ── */
+.reveal-text {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal-text.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+/* ── Scroll Reveal Helper Classes ── */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.scroll-reveal--left {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.scroll-reveal--right {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.scroll-reveal--scale {
+  opacity: 0;
+  transform: scale(0.92);
+}
+
+/* ── Stagger Children ── */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* ── Hero Polaroid Animations ── */
+@keyframes polaroidFloat1 {
+  0%, 100% { transform: translateY(0) rotate(-8deg); }
+  50% { transform: translateY(-15px) rotate(-6deg); }
+}
+
+@keyframes polaroidFloat2 {
+  0%, 100% { transform: translateY(0) rotate(6deg); }
+  50% { transform: translateY(12px) rotate(8deg); }
+}
+
+@keyframes polaroidFloat3 {
+  0%, 100% { transform: translateY(0) rotate(12deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+@keyframes polaroidFloat4 {
+  0%, 100% { transform: translateY(0) rotate(-10deg); }
+  50% { transform: translateY(15px) rotate(-12deg); }
+}
+
+.polaroid--1 { animation: polaroidFloat1 6s ease-in-out infinite; }
+.polaroid--2 { animation: polaroidFloat2 7s ease-in-out infinite; }
+.polaroid--3 { animation: polaroidFloat3 8s ease-in-out infinite; }
+.polaroid--4 { animation: polaroidFloat4 9s ease-in-out infinite; }
+
+/* ── Hover Transitions ── */
+.hover-lift {
+  transition: transform var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hover-scale {
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .scroll-reveal,
+  .scroll-reveal--left,
+  .scroll-reveal--right,
+  .scroll-reveal--scale,
+  .stagger-children > *,
+  .reveal-text {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero__decoration {
+    display: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
