@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta -->
+  <title>Vân Hoa — DIY Leather Charm Văn Hóa Việt</title>
+  <meta name="description"
+    content="Vân Hoa — Thương hiệu DIY Leather Charm lấy cảm hứng từ văn hóa Việt Nam. Tự tay tạo nên tác phẩm nghệ thuật da thủ công, kể câu chuyện lễ hội trên từng vân da.">
+  <meta name="keywords"
+    content="DIY leather charm, charm da tự làm, móc khóa da, charm túi xách, handmade, văn hóa Việt Nam, Vân Hoa, quà lưu niệm, workshop da">
+  <meta name="author" content="Vân Hoa">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vân Hoa — DIY Leather Charm Văn Hóa Việt">
+  <meta property="og:description"
+    content="DIY Leather Charm lấy cảm hứng từ văn hóa Việt Nam. Tự tay sáng tạo hoặc sở hữu sản phẩm hoàn thiện — kể câu chuyện lễ hội trên từng vân da.">
+  <meta property="og:image" content="assets/images/collection-coinguon.jpg">
+  <!-- LINK: Thay URL bằng domain thật khi deploy -->
+  <meta property="og:url" content="https://vanhoa.vn">
+
+  <!-- Favicon — LOGO: Thay bằng favicon thật của bạn -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🌸</text></svg>"
+    type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Vân Hoa",
+    "description": "Thương hiệu DIY Leather Charm lấy cảm hứng từ văn hóa Việt Nam. Tự tay sáng tạo hoặc sở hữu tác phẩm nghệ thuật da thủ công.",
+    "url": "https://vanhoa.vn",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": "Vietnamese"
+    },
+    "sameAs": [
+      "https://facebook.com/vanhoa",
+      "https://instagram.com/vanhoa",
+      "https://www.tiktok.com/@vanhoavietnam.charm",
+      "https://shopee.vn/vanhoa"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       PRELOADER
+       ═══════════════════════════════════════════ -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <span class="preloader__brand">Vân Hoa</span>
+    <div class="preloader__bar"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" aria-label="Vân Hoa - Trang chủ">
+        <img src="assets/images/vanhoa.png" alt="Vân Hoa Logo" style="width: 7%; height: auto" />
+        <span style="font-family: var(--font-display);">VÂN HOA</span>
+      </a>
+
+      <div class=" navbar__menu">
+        <ul class="navbar__links">
+          <li><a href="#story" class="navbar__link">Giới Thiệu</a></li>
+          <li><a href="#collections" class="navbar__link">Bộ Sưu Tập</a></li>
+          <li><a href="#products" class="navbar__link">Sản Phẩm</a></li>
+          <li><a href="#contact" class="navbar__link">Liên Hệ</a></li>
+        </ul>
+
+        <!-- LINK: Thay # bằng link Messenger thật. Ví dụ: https://m.me/YOUR_PAGE_ID -->
+        <a href="#" class="btn btn--primary btn--sm" data-platform="messenger" target="_blank" rel="noopener">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+          </svg>
+          Nhắn tin
+        </a>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button id="hamburger" class="hamburger" aria-label="Mở menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Menu di động">
+    <a href="#story" class="mobile-menu__link">Giới Thiệu</a>
+    <a href="#collections" class="mobile-menu__link">Bộ Sưu Tập</a>
+    <a href="#products" class="mobile-menu__link">Sản Phẩm</a>
+    <a href="#contact" class="mobile-menu__link">Liên Hệ</a>
+    <!-- LINK: Thay # bằng link Messenger thật -->
+    <a href="#" class="btn btn--primary" data-platform="messenger" target="_blank" rel="noopener">
+      Nhắn Messenger
+    </a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1: HERO
+       ═══════════════════════════════════════════ -->
+  <header class="hero section" id="hero">
+    <!-- Floating Polaroids -->
+    <div class="hero__polaroids" aria-hidden="true">
+      <div class="polaroid-wrapper polaroid--1">
+        <div class="polaroid-img"><img src="assets/images/product-bagcharm-1.png" alt="" loading="eager"></div>
+      </div>
+      <div class="polaroid-wrapper polaroid--2">
+        <div class="polaroid-img"><img src="assets/images/collection-coinguon.jpg" alt="" loading="eager"></div>
+      </div>
+      <div class="polaroid-wrapper polaroid--3">
+        <div class="polaroid-img"><img src="assets/images/product-keychain-1.png" alt="" loading="eager"></div>
+      </div>
+      <div class="polaroid-wrapper polaroid--4">
+        <div class="polaroid-img"><img src="assets/images/collection-giaiphong.jpg" alt="" loading="eager"></div>
+      </div>
+    </div>
+
+    <div class="hero__content">
+      <span class="hero__label">DIY Leather Charm — Văn Hóa Việt</span>
+      <h1 class="hero__title">Vân Hoa</h1>
+      <p class="hero__subtitle">Dấu ấn riêng từ vẻ đẹp kết tinh văn hóa</p>
+      <p class="hero__desc">
+        Mỗi chiếc leather charm không chỉ là một món phụ kiện — mà là một câu chuyện
+        văn hóa đang chờ bạn khám phá. Tự tay sáng tạo hoặc sở hữu ngay — trải nghiệm
+        tinh hoa lễ hội Việt trên từng vân da thủ công.
+      </p>
+      <div class="hero__actions">
+        <a href="#collections" class="btn btn--primary">
+          Khám phá bộ sưu tập
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <!-- LINK: Thay # bằng link Messenger thật -->
+        <a href="#contact" class="btn btn--secondary">
+          Liên hệ ngay
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2: BRAND STORY
+       ═══════════════════════════════════════════ -->
+  <section class="brand-story section" id="story">
+    <div class="container">
+      <div class="brand-story__grid">
+        <div class="brand-story__text">
+          <span class="section-label">Về Vân Hoa</span>
+          <h2>Câu chuyện<br>của chúng tôi</h2>
+          <hr class="section-divider" style="margin-left:0; margin-right:auto;">
+          <p>
+            Chúng tôi — Vân Hoa, là những người yêu thích văn hóa và tôn vinh sáng tạo,
+            mong muốn làm nhân tố tạo xúc tác cho làn sóng văn hóa Việt Nam.
+            "Vân" là sự nhẹ nhàng bay bổng, là dấu ấn riêng.
+            "Hoa" là vẻ đẹp, là tinh hoa được kết tinh qua thời gian.
+          </p>
+          <blockquote class="brand-story__highlight">
+            "Văn hóa tựa khúc xạ thiên hương — Vân Hoa tạo dấu ấn riêng
+            từ vẻ đẹp kết tinh của văn hóa, để văn hóa không chỉ là ngắm nhìn
+            mà còn là sáng tạo, quảng bá và sống cùng văn hóa."
+          </blockquote>
+          <p>
+            Tại Vân Hoa, mỗi chiếc leather charm không chỉ là một món phụ kiện —
+            mà là một câu chuyện đang chờ bạn khám phá. Sản phẩm được đóng gói
+            trong hộp quà màu trắng gạo, kèm sticker và card thông tin,
+            tạo cảm giác như một món quà chỉn chu gửi tặng chính bạn.
+          </p>
+        </div>
+        <div class="brand-story__visual">
+          <!-- THAY ẢNH: Đổi src thành ảnh thật về workshop/nghệ nhân -->
+          <img src="assets/images/product-bagcharm-1.png"
+            alt="Nghệ nhân Vân Hoa đang tạo tác phẩm leather charm thủ công" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3: COLLECTIONS
+       ═══════════════════════════════════════════ -->
+  <section class="collections section" id="collections">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-label">Bộ Sưu Tập</span>
+        <h2>Mùa lễ hội Việt Nam</h2>
+        <hr class="section-divider">
+        <p>Mỗi bộ sưu tập là một chương trong câu chuyện văn hóa dân tộc.
+          Giới hạn số lượng, mỗi mùa một skin — tự tay sáng tạo hoặc sở hữu ngay.</p>
+      </div>
+
+      <div class="collections__grid">
+        <!-- Collection 1: Mùa Cội Nguồn -->
+        <a href="#products" class="collection-card" aria-label="Xem bộ sưu tập Mùa Cội Nguồn">
+          <div class="collection-card__image">
+            <!-- THAY ẢNH: Đổi src thành ảnh BST Cội Nguồn thật -->
+            <img src="assets/images/collection-coinguon.jpg" alt="Bộ sưu tập Mùa Cội Nguồn - Lễ hội Đền Hùng">
+          </div>
+          <div class="collection-card__overlay"></div>
+          <div class="collection-card__content">
+            <span class="collection-card__icon">🏛️</span>
+            <h3 class="collection-card__name">Mùa Cội Nguồn</h3>
+            <p class="collection-card__desc">
+              Bộ sưu tập đầu tiên — Leather Charm Lễ hội Đền Hùng.
+              Hoa văn trống đồng, huyền thoại con Rồng cháu Tiên,
+              tưởng nhớ cội nguồn dân tộc.
+            </p>
+            <span class="collection-card__cta">
+              Khám phá
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Collection 2: Mùa Giải Phóng -->
+        <a href="#products" class="collection-card" aria-label="Xem bộ sưu tập Mùa Giải Phóng">
+          <div class="collection-card__image">
+            <!-- THAY ẢNH: Đổi src thành ảnh BST Giải Phóng thật -->
+            <img src="assets/images/collection-giaiphong.jpg" alt="Bộ sưu tập Mùa Giải Phóng - 30/4">
+          </div>
+          <div class="collection-card__overlay"></div>
+          <div class="collection-card__content">
+            <span class="collection-card__icon">⭐</span>
+            <h3 class="collection-card__name">Mùa Giải Phóng</h3>
+            <p class="collection-card__desc">
+              Tinh thần thống nhất và tự hào — Leather Charm 30/4.
+              Biểu tượng hòa bình, ngôi sao và khát vọng tự do của dân tộc.
+            </p>
+            <span class="collection-card__cta">
+              Khám phá
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4: FEATURED PRODUCTS
+       ═══════════════════════════════════════════ -->
+  <section class="products section" id="products">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-label">Sản Phẩm</span>
+        <h2>Tác phẩm nổi bật</h2>
+        <hr class="section-divider">
+        <p>Mỗi sản phẩm mang ý nghĩa văn hóa sâu sắc. Lựa chọn DIY tự làm
+          hoặc sản phẩm hoàn thiện sẵn — đều được đóng gói trong hộp quà chỉn chu.</p>
+      </div>
+
+      <div class="products__grid">
+
+        <!-- Product 1 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <div class="product-card__badges">
+              <span class="badge badge--custom">🔧 DIY</span>
+              <span class="badge badge--custom">✨ Khắc tên</span>
+            </div>
+            <!-- THAY ẢNH: Đổi src thành ảnh sản phẩm thật -->
+            <img src="assets/images/product-keychain-1.png" alt="Móc khóa Trống Đồng - BST Cội Nguồn" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__collection">Mùa Cội Nguồn</span>
+            <h3 class="product-card__name">Vua Bánh Chưng</h3>
+            <p class="product-card__type">Móc khóa da · <strong
+                style="color: var(--clr-accent, #D4A373);">250.000₫</strong></p>
+            <div class="product-card__actions">
+              <!-- LINK: Thay # bằng link sản phẩm trên Shopee -->
+              <a href="#" class="btn btn--primary btn--sm" data-platform="shopee" target="_blank" rel="noopener">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                Shopee
+              </a>
+              <!-- LINK: Thay # bằng link Messenger thật -->
+              <a href="#" class="btn btn--ghost btn--sm" data-platform="messenger" target="_blank" rel="noopener">
+                Nhắn tin
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <div class="product-card__badges">
+              <span class="badge badge--custom">🔧 DIY</span>
+            </div>
+            <!-- THAY ẢNH: Đổi src thành ảnh sản phẩm thật -->
+            <img src="assets/images/product-bagcharm-1.png" alt="Charm túi Rồng Phượng - BST Cội Nguồn" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__collection">Mùa Cội Nguồn</span>
+            <h3 class="product-card__name">Hoàng hậu Bánh Giầy</h3>
+            <p class="product-card__type">Charm túi xách · <strong
+                style="color: var(--clr-accent, #D4A373);">250.000₫</strong></p>
+            <div class="product-card__actions">
+              <a href="#" class="btn btn--primary btn--sm" data-platform="shopee" target="_blank" rel="noopener">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                Shopee
+              </a>
+              <a href="#" class="btn btn--ghost btn--sm" data-platform="messenger" target="_blank" rel="noopener">
+                Nhắn tin
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <div class="product-card__badges">
+              <span class="badge badge--custom">🔧 DIY</span>
+              <span class="badge badge--custom">✨ Khắc tên</span>
+            </div>
+            <!-- THAY ẢNH: Đổi src thành ảnh sản phẩm thật -->
+            <img src="assets/images/product-keychain-2.png" alt="Móc khóa Phượng Hoàng - BST Cội Nguồn" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__collection">Mùa Cội Nguồn</span>
+            <h3 class="product-card__name">Bé Gạo</h3>
+            <p class="product-card__type">Móc khóa da · <strong
+                style="color: var(--clr-accent, #D4A373);">250.000₫</strong></p>
+            <div class="product-card__actions">
+              <a href="#" class="btn btn--primary btn--sm" data-platform="shopee" target="_blank" rel="noopener">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                Shopee
+              </a>
+              <a href="#" class="btn btn--ghost btn--sm" data-platform="messenger" target="_blank" rel="noopener">
+                Nhắn tin
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <div class="product-card__badges">
+              <span class="badge badge--custom">🔧 DIY</span>
+            </div>
+            <!-- THAY ẢNH: Đổi src thành ảnh sản phẩm thật -->
+            <img src="assets/images/product-bagcharm-2.png" alt="Charm túi Ngôi Sao - BST Giải Phóng" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__collection">Mùa Cội Nguồn</span>
+            <h3 class="product-card__name">Bé Đậu</h3>
+            <p class="product-card__type">Charm túi xách · <strong
+                style="color: var(--clr-accent, #D4A373);">250.000₫</strong></p>
+            <div class="product-card__actions">
+              <a href="#" class="btn btn--primary btn--sm" data-platform="shopee" target="_blank" rel="noopener">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                Shopee
+              </a>
+              <a href="#" class="btn btn--ghost btn--sm" data-platform="messenger" target="_blank" rel="noopener">
+                Nhắn tin
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <div class="product-card__badges">
+              <span class="badge badge--custom">🔧 DIY</span>
+              <span class="badge badge--custom">✨ Khắc tên</span>
+            </div>
+            <!-- THAY ẢNH: Đổi src thành ảnh sản phẩm thật -->
+            <img src="assets/images/product-keychain-1.png" alt="Móc khóa Hòa Bình - BST Giải Phóng" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__collection">Mùa Giải Phóng</span>
+            <h3 class="product-card__name">Cánh Chim Hòa Bình</h3>
+            <p class="product-card__type">Móc khóa da · <strong
+                style="color: var(--clr-accent, #D4A373);">250.000₫</strong></p>
+            <div class="product-card__actions">
+              <a href="#" class="btn btn--primary btn--sm" data-platform="shopee" target="_blank" rel="noopener">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                Shopee
+              </a>
+              <a href="#" class="btn btn--ghost btn--sm" data-platform="messenger" target="_blank" rel="noopener">
+                Nhắn tin
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <div class="product-card__badges">
+              <span class="badge badge--custom">🔧 DIY</span>
+            </div>
+            <!-- THAY ẢNH: Đổi src thành ảnh sản phẩm thật -->
+            <img src="assets/images/product-bagcharm-2.png" alt="Charm túi Tre Việt - BST Giải Phóng" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__collection">Mùa Giải Phóng</span>
+            <h3 class="product-card__name">Tre Việt Kiên Cường</h3>
+            <p class="product-card__type">Charm túi xách · <strong
+                style="color: var(--clr-accent, #D4A373);">250.000₫</strong></p>
+            <div class="product-card__actions">
+              <a href="#" class="btn btn--primary btn--sm" data-platform="shopee" target="_blank" rel="noopener">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                Shopee
+              </a>
+              <a href="#" class="btn btn--ghost btn--sm" data-platform="messenger" target="_blank" rel="noopener">
+                Nhắn tin
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 5: WHY VÂN HOA
+       ═══════════════════════════════════════════ -->
+  <section class="why-us section" id="why-us">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-label">Điều Khác Biệt</span>
+        <h2>Tại sao chọn Vân Hoa?</h2>
+        <hr class="section-divider">
+      </div>
+
+      <div class="why-us__grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-card__icon">🎨</div>
+          <h3 class="feature-card__title">Sáng tạo DIY</h3>
+          <p class="feature-card__desc">
+            Tự tay tạo nên tác phẩm của riêng bạn hoặc sở hữu sản phẩm hoàn thiện sẵn.
+            Mỗi charm là một trải nghiệm sáng tạo mang dấu ấn cá nhân.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-card__icon">🎭</div>
+          <h3 class="feature-card__title">Giới hạn theo mùa</h3>
+          <p class="feature-card__desc">
+            Mỗi bộ sưu tập gắn liền với một mùa lễ hội. Giới hạn số lượng,
+            mỗi mùa một skin — cập nhật xu hướng, không bao giờ lỗi thời.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-card__icon">🎁</div>
+          <h3 class="feature-card__title">Đóng gói quà tặng</h3>
+          <p class="feature-card__desc">
+            Hộp quà trắng gạo, kèm sticker trang trí và card thông tin.
+            Mỗi sản phẩm là một món quà chỉn chu gửi tặng cho chính bạn.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 6: CONTACT
+       ═══════════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__content">
+        <span class="section-label">Liên Hệ</span>
+        <h2>Kết nối với Vân Hoa</h2>
+        <hr class="section-divider">
+        <p>
+          Bạn muốn tự tay sáng tạo leather charm của riêng mình?
+          Hay muốn sở hữu sản phẩm hoàn thiện sẵn? Hãy nhắn tin cho chúng tôi —
+          hoặc ghé thăm kênh TikTok và Website chính thức.
+        </p>
+
+        <div class="contact__actions">
+          <!-- LINK: Thay # bằng link Messenger thật. Ví dụ: https://m.me/YOUR_PAGE_ID -->
+          <a href="#" class="btn btn--primary contact__messenger" data-platform="messenger" target="_blank"
+            rel="noopener">
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+            Nhắn Messenger
+          </a>
+          <!-- LINK: Thay # bằng link Shopee store thật -->
+          <a href="#" class="btn btn--secondary" data-platform="shopee" target="_blank" rel="noopener">
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            Ghé Shopee
+          </a>
+        </div>
+
+        <p class="contact__social-label">Theo dõi Vân Hoa trên</p>
+        <div class="social-links">
+          <!-- LINK: Thay # bằng link Facebook thật -->
+          <a href="https://www.facebook.com/profile.php?id=61574556970981" class="social-link" data-platform="facebook"
+            target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+          </a>
+          <!-- LINK: Thay # bằng link Instagram thật -->
+          <a href="https://www.instagram.com/_vanhoavietnam/?utm_source=ig_web_button_share_sheet" class="social-link"
+            data-platform="instagram" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@vanhoavietnam.charm?_r=1&_t=ZS-95HTTfr7a3I" class="social-link"
+            data-platform="tiktok" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86-4.43V7.56a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-.81.01h-.38z" />
+            </svg>
+          </a>
+          <!-- LINK: Thay # bằng link Shopee thật -->
+          <a href="#" class="social-link" data-platform="shopee" target="_blank" rel="noopener" aria-label="Shopee">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <img src="assets/images/vanhoa.png" alt="Vân Hoa" width="160" height="48">
+        </div>
+        <p class="footer__tagline">
+          Dấu ấn riêng từ vẻ đẹp kết tinh văn hóa — DIY Leather Charm
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61574556970981" class="social-link" data-platform="facebook"
+            target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/_vanhoavietnam/?utm_source=ig_web_button_share_sheet" class="social-link"
+            data-platform="instagram" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@vanhoavietnam.charm?_r=1&_t=ZS-95HTTfr7a3I" class="social-link"
+            data-platform="tiktok" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86-4.43V7.56a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-.81.01h-.38z" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" data-platform="shopee" target="_blank" rel="noopener" aria-label="Shopee">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+          </a>
+        </div>
+
+        <hr class="footer__divider">
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © <span id="copyright-year">2026</span> Vân Hoa. Tất cả quyền được bảo lưu.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM CURSOR
+       ═══════════════════════════════════════════ -->
+  <div class="cursor-dot">
+    <svg viewBox="-10 -30 20 30" width="16" height="24" style="transform: rotate(135deg);">
+      <path d="M 0,0 C -8,-15 -18,-25 0,-30 C 18,-25 8,-15 0,0 Z" fill="#F2B5C8" stroke="#D4A373" stroke-width="1" />
+    </svg>
+  </div>
+  <div class="cursor-follower">
+    <svg class="cursor-flower" viewBox="-30 -30 60 60" width="40" height="40"
+      style="display:none; opacity:0; transform:scale(0)">
+      <defs>
+        <linearGradient id="cursor-grad">
+          <stop offset="0%" stop-color="#F2B5C8" />
+          <stop offset="100%" stop-color="#EDD48E" />
+        </linearGradient>
+      </defs>
+      <g stroke="#D4A373" stroke-width="0.5" fill="url(#cursor-grad)">
+        <path d="M 0,0 C -8,-15 -18,-25 0,-30 C 18,-25 8,-15 0,0 Z" transform="rotate(0)" />
+        <path d="M 0,0 C -8,-15 -18,-25 0,-30 C 18,-25 8,-15 0,0 Z" transform="rotate(72)" />
+        <path d="M 0,0 C -8,-15 -18,-25 0,-30 C 18,-25 8,-15 0,0 Z" transform="rotate(144)" />
+        <path d="M 0,0 C -8,-15 -18,-25 0,-30 C 18,-25 8,-15 0,0 Z" transform="rotate(216)" />
+        <path d="M 0,0 C -8,-15 -18,-25 0,-30 C 18,-25 8,-15 0,0 Z" transform="rotate(288)" />
+      </g>
+      <circle cx="0" cy="0" r="4" fill="#D4A373" />
+    </svg>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       BACK TO TOP
+       ═══════════════════════════════════════════ -->
+  <button id="back-to-top" class="back-to-top" aria-label="Lên đầu trang">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+       ═══════════════════════════════════════════ -->
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <!-- GSAP ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <!-- App Scripts -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+
+</body>
+
+</html>
